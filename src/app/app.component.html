@@ -1,4 +1,14 @@
-<hello name="{{ name }}"></hello>
-<p>
-  Start editing to see some magic happen :)
-</p>
+<app-first
+  [width]="width"  (changeWidthEvent)='changeWidthDisplay($event)' (changeHeightEvent)='changeHeightDisplay($event)' (changeClassEvent)='changeClassDisplay($event)'
+  [height]="height"  
+></app-first>
+
+<section class="scene"   >
+  <div #figureId
+    class="figure" [ngStyle]="getFigureStyle()"
+    [ngClass]="{'gradient-multicolor': currentClass === 'gradient-multicolor'}"
+
+  >
+    <div class="inner"></div>
+  </div>
+</section>

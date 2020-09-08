@@ -1,0 +1,33 @@
+@keyframes rotateMe {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .scene {
+    width: 100%;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .figure {
+    width: 100px;
+    height: 100px;
+    animation: rotateMe 2s linear infinite;
+    border-radius: 100%;
+  }
+  
+  .figure .inner {
+    width: 90%;
+    height: 90%;
+  
+    transform: translate(5%, 5%);
+    background: white;
+    border-radius: 100%;
+  }
+  

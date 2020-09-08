@@ -1,0 +1,8 @@
+<section class="scene" (changeWidthEvent)='changeWidthDisplay($event)' (changeHeightEvent)='changeHeightDisplay($event)'>
+    <div 
+      class="figure"
+      [ngClass]="{'gradient-multicolor': currentClass === 'gradient-multicolor'}"
+    >
+      <div class="inner"></div>
+    </div>
+  </section>
